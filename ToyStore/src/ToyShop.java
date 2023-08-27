@@ -21,7 +21,7 @@ public class ToyShop {
         Random random = new Random();
 
         if (choice == 1){
-            try (FileWriter writer = new FileWriter("resLog.txt")) {
+            try (FileWriter writer = new FileWriter("C:/learning/Toy_Store_for_GB/ToyStore/src/resLog.txt")) {
                 for (int i = 0; i < 10; i++) {
                     Toy toySelect = Toy.getRandomToy(toyQueue, random);
                     writer.write("Выпала игрушка: " + toySelect.id + " " + toySelect.name + "\n");
@@ -30,7 +30,7 @@ public class ToyShop {
                 e.printStackTrace();
             }
         } else if (choice == 2) {
-            try (FileWriter writer = new FileWriter("resLog.txt")) {
+            try (FileWriter writer = new FileWriter("C:/learning/Toy_Store_for_GB/ToyStore/src/resLog.txt")) {
                 for (int i = 0; i < 10; i++) {
                     Toy toySelect = Toy.getRandom602020(toyQueue, random);
                     writer.write("Выпала игрушка: " + toySelect.id + " " + toySelect.name + "\n");
